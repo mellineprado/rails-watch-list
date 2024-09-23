@@ -26,10 +26,12 @@
   </div>
   <hr class="my-5">
 
+  <%#= List with film categories %>
   <div class="row my-2">
     <%= render 'lists/list', list: @list %>
   </div>
 
+  <%#= Reviews  %>
   <%= render 'lists/reviews', list: @list, review: @review  %>
 </div>
 
