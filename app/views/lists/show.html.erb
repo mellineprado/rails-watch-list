@@ -4,7 +4,9 @@
   </div>
   <span class="movie-tag"><%= pluralize(@list.movies.size, "movie") %></span>
 </div>
+
 <div class="container mb-5">
+  <%= link_to 'Back to list', lists_path, class: 'btn btn-dark mt-4' %>
   <div class="d-flex justify-content-between my-4">
     <span class="mb-2 d-block"><small><em class="text-muted"><%= "You haven't saved any movies yet!" if @list.movies.empty? %></em></small></span>
     <div>
@@ -22,6 +24,7 @@
       %>
     </div>
   </div>
+
   <div class="row my-2">
     <% @list.movies.each do |movie| %>
       <% bookmark = Bookmark.find_by(list: @list, movie: movie) %>
@@ -51,6 +54,7 @@
       </div>
     <% end %>
   </div>
+
   <hr class="my-5">
   <div class="row">
     <div class="col-12 col-sm-6">
@@ -69,6 +73,7 @@
         <hr>
       <% end %>
     </div>
+    
     <div class="col-12 col-sm-6">
       <div class="bg-white rounded p-3">
         <h5>Add your review</h5>
