@@ -1,5 +1,5 @@
 .cover {
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(asset_path('cine.jpg'));
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(asset_path('cover.jpg'));
   height: 500px;
   width: 100%;
   background-size: cover;
@@ -9,4 +9,29 @@
 
 .typed-js {
   min-height: 33.6px;
+}
+
+.animated-title {
+  font-size: 3rem;
+  font-weight: bold;
+  animation: moveLetters 2s ease-in-out infinite;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+@keyframes moveLetters {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  75% {
+  }
+  100% {
+    transform: translateX(0);
+  }
 }

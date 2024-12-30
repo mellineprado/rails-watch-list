@@ -5,7 +5,7 @@
         <h3>Create a new list</h3>
 
         <%= simple_form_for @list do |f| %>
-          <%= f.input :name, placeholder: 'Drama' %>
+          <%= f.input :name, placeholder: 'Ex: Comedy' %>
           <%= f.input :photo %>
           <%= link_to 'Back', lists_path, class: 'btn btn-dark' %>
           <%= f.submit class: 'btn btn-dark' %>
