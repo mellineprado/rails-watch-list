@@ -29,10 +29,11 @@
           <%= f.input :rating,
                       collection: (1..5).to_a,
                       label: "Rate your experience",
-                      input_html: {class: 'form-control custom-input', data: {controller: "star-rating"}}
-          %>
+                      input_html: {class: 'form-control custom-input', data: {controller: "star-rating"}} %>
         </div>
-        <%= f.submit 'Submit Review', class: "btn btn-custom mt-4" %>
+        <div class="text-center">
+          <%= f.submit 'Submit', class: "btn btn-custom mt-4" %>
+        </div>
       <% end %>
     </div>
   </div>
