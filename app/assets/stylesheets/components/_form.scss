@@ -1,0 +1,28 @@
+.bg-gradient {
+  background: linear-gradient(135deg, #a82723, #ff4b2b);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+}
+
+.custom-input {
+  border-radius: 10px;
+  border: 1px solid #a82723;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #fff7f7;
+}
+
+.custom-input:focus {
+  border-color: #922b21;
+  box-shadow: 0 0 5px rgba(146, 43, 33, 0.5);
+}
+a
+.form-group {
+  margin-bottom: 15px;
+}
