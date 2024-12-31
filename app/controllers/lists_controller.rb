@@ -2,12 +2,11 @@ class ListsController < ApplicationController
   before_action :set_list, only: %i[show edit update destroy]
 
   def index
-    @lists = List.all
+    @lists = current_user.lists
   end
 
   def show
     @bookmark = Bookmark.new
-    @review = Review.new(list: @list)
   end
 
   def new
@@ -15,7 +14,7 @@ class ListsController < ApplicationController
   end
 
   def create
-    @list = List.new(list_params)
+    @list = current_user.lists.build(list_params)
     if @list.save
       redirect_to list_path(@list)
     else
@@ -27,7 +26,7 @@ class ListsController < ApplicationController
 
   def update
     if @list.update(list_params)
-      redirect_to list_path(@list), notice: 'List was successfully updated.'
+      redirect_to lists_path, notice: 'List was successfully updated.'
     else
       render :edit, status: :unprocessable_entity
     end

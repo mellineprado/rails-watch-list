@@ -5,10 +5,14 @@
         <h3 class="text-white">Add a movie to your <%= @list.name %> list</h3>
         <%= simple_form_for [@list, @bookmark] do |f| %>
           <div class="form-group">
-            <%= f.input :comment, placeholder: 'Enter a comment about the movie', input_html: { class: 'form-control custom-input' } %>
+            <%= f.input :comment,
+                        placeholder: 'Enter a comment about the movie',
+                        input_html: { class: 'form-control custom-input' }
+            %>
           </div>
           <div class="form-group">
-            <%= f.association :movie, prompt: "Select a movie" %>
+            <%= f.association :movie,
+                              prompt: "Select a movie" %>
           </div>
           <%= f.submit class: "btn btn-custom" %>
         <% end %>
