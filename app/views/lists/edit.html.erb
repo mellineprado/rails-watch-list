@@ -1,0 +1,12 @@
+<div class="container py-5">
+  <div class="row">
+    <div class="col-12 col-md-6 offset-lg-3">
+      <div class="bg-gradient p-4 rounded shadow-lg">
+        <h3 class="text-center mb-4">Edit List</h3>
+        <%= simple_form_for @list do |f| %>
+          <%= render 'form', f: f, form_submit_text: 'Update List' %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

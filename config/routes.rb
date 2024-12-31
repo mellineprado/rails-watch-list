@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  root to: "lists#index"
-  resources :lists, except: %i[edit update] do
+  root to: 'lists#index'
+  resources :lists do
     resources :bookmarks, only: %i[new create]
     resources :reviews, only: :create
   end

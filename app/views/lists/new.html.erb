@@ -1,21 +1,10 @@
 <div class="container py-5">
   <div class="row">
     <div class="col-12 col-md-6 offset-lg-3">
-      <!-- Estilo do formulário -->
       <div class="bg-gradient p-4 rounded shadow-lg">
         <h3 class="text-center mb-4">Create a new list</h3>
-
         <%= simple_form_for @list do |f| %>
-          <div class="form-group">
-            <%= f.input :name, placeholder: 'Ex: Comedy', input_html: { class: 'form-control custom-input' } %>
-          </div>
-          <div class="form-group">
-            <%= f.input :photo, input_html: { class: 'form-control custom-input' } %>
-          </div>
-          <div class="d-flex justify-content-between">
-            <%= link_to 'Back', lists_path, class: 'btn btn-custom' %>
-            <%= f.submit 'Create List', class: 'btn btn-custom' %>
-          </div>
+          <%= render 'form', f: f, form_submit_text: 'Create List' %>
         <% end %>
       </div>
     </div>
