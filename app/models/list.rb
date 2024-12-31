@@ -7,5 +7,5 @@ class List < ApplicationRecord
   has_one_attached :photo
 
   # Validations
-  validates :name, uniqueness: true, presence: true
+  validates :name, presence: true, uniqueness: { scope: :user_id }
 end
