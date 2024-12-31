@@ -6,4 +6,8 @@ class User < ApplicationRecord
 
   # Associations
   has_many :lists, dependent: :destroy
+
+  def name
+    "#{first_name} "" #{last_name}"
+  end
 end
