@@ -1,10 +1,9 @@
 # Rails Watch List
-![Captura de tela de 2025-01-02 14-19-29](https://github.com/user-attachments/assets/75f938c4-223e-4f9e-85f7-8273a806d298)
+![Captura de tela de 2025-01-02 15-47-30](https://github.com/user-attachments/assets/8799b753-c810-4187-95b6-678f7f8082ee)
 ![Captura de tela de 2025-01-02 14-54-47](https://github.com/user-attachments/assets/c2014395-bfe2-4067-b9d4-9f07f54bfdb7)
 ![Captura de tela de 2025-01-02 14-54-53](https://github.com/user-attachments/assets/aa32f029-7a8c-4cdf-ad05-07ecb07e294c)
 ![Captura de tela de 2025-01-02 14-56-23](https://github.com/user-attachments/assets/f8a9d480-b6c3-4f4b-8a1e-1e07c3bf8a8e)
 ![Captura de tela de 2025-01-02 15-24-45](https://github.com/user-attachments/assets/806e8cd6-a415-4517-a121-ec2a807038b6)
-
 
 
 ## Overview
